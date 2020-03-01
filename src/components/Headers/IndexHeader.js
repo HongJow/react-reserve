@@ -43,6 +43,7 @@ function IndexHeader() {
           <div className="content-center brand">
             <h1 className="h1-seo">신비의 나라 Laos - Pool Villa</h1>
           </div>
+          
         </Container>
       </div>
     </>

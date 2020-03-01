@@ -47,7 +47,7 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              href="/"
+              exact to="/"
               id="navbar-brand"
               style={{
                 fontSize: "1.3rem"
@@ -77,41 +77,16 @@ function IndexNavbar() {
             <Nav navbar>
               <NavItem>
                 <NavLink
-                  href="#pablo"
                   onClick={e => {
-                    e.preventDefault();
-                    document
-                    .getElementById("reservation-section")
-                    .scrollIntoView();
+                    window.location.href="/login"
                   }}
                 >
-                  <p>예약하기</p>
+                  <p style={{ fontSize: '15px' }}>로그인</p>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink
-                  href="#pablo"
-                  onClick={e => {
-                    e.preventDefault();
-                    document
-                    .getElementById("login-section")
-                    .scrollIntoView();
-                  }}
-                >
-                  <p>로그인</p>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="#pablo"
-                  onClick={e => {
-                    e.preventDefault();
-                    document
-                    .getElementById("sign-up-section")
-                    .scrollIntoView();
-                  }}
-                >
-                  <p>회원가입</p>
+                <NavLink to="/signup">
+                  <p style={{ fontSize: '15px' }}>회원가입</p>
                 </NavLink>
               </NavItem>
             </Nav>

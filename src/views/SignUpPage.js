@@ -11,10 +11,10 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 
 // sections for this page
 import CompleteExamples from "./index-sections/CompleteExamples.js";
+import SignUp from "./index-sections/SignUp.js";
 import {Button, Container, Row} from "reactstrap";
-import NameCard from 'assets/img/card.png'
 
-function Index() {
+function SignUpPage() {
   React.useEffect(() => {
     document.body.classList.add("index-page");
     document.body.classList.add("sidebar-collapse");
@@ -34,9 +34,7 @@ function Index() {
         <div className="main">
           <CompleteExamples />
           <div className="section section-examples">
-          <Container className="text-center">
-            <img src={NameCard}/>
-          </Container>
+            <SignUp />
           <div className="space-50"></div>
         </div>
         </div>
@@ -46,4 +44,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default SignUpPage;

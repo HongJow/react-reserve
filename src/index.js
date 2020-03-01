@@ -9,17 +9,11 @@ import "assets/demo/demo.css";
 import "assets/demo/nucleo-icons-page-styles.css";
 
 // pages for this kit
-import Index from "views/Index.js";
+import App from "shared/App.js";
 
 ReactDOM.render(
   <BrowserRouter>
-    <Switch>
-      <Switch>
-        <Route path="/index" render={props => <Index {...props} />} />
-        <Redirect to="/index" />
-        <Redirect from="/" to="/index" />
-      </Switch>
-    </Switch>
-  </BrowserRouter>,
+    <App />
+  </BrowserRouter>, 
   document.getElementById("root")
 );

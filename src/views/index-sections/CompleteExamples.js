@@ -12,7 +12,7 @@ function CompleteExamples() {
         <Container className="text-center">
           <Row className="justify-content-md-center">
             <Col lg="8" md="12">
-              <h3 className="title">서울 사무소 : 070-8731-6000</h3>
+              <h3 className="title">Hello</h3>
             </Col>
           </Row>
         </Container>
